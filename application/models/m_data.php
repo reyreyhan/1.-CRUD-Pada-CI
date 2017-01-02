@@ -9,6 +9,10 @@ class m_data extends CI_Model{
 		return $this->db->get('mahasiswa');
 	}
 
+	function jumlah_data(){
+		return $this->db->get('mahasiswa')->num_rows();
+	}
+
 	function input_data($data,$mahasiswa){
 		$this->db->insert($mahasiswa,$data);
 	}

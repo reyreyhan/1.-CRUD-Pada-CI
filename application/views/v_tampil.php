@@ -18,7 +18,10 @@
 		<tr>
 			<td><?php echo $u->nama ?></td>
 			<td><?php echo $u->alamat ?></td>
-			<td><?php echo $u->jurusan ?></td>			
+			<td><?php echo $u->jurusan ?></td>
+			<td>
+			<img height="50" width="50" src="<?php echo base_url(). "foto/".$u->foto ?>">
+			</td>			
 			<td>
 			<?php echo anchor('helloworld/edit/'.$u->no_induk,'Edit'); ?>
             <?php echo anchor('helloworld/hapus/'.$u->no_induk,'Hapus'); ?>
